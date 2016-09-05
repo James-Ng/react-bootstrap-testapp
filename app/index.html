@@ -1,0 +1,179 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <title>GetLinks Frontend Developer Test</title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="GetLinks Frontend Developer Test">
+    <meta name="author" content="James Nguyen">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+</head>
+
+<body id="page-top">
+    <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="visible-xs-inline" href="#page-top"><img src="images/getlinks.jpeg" class="img-circle" /></a>
+
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="menu-collapse">
+                <div class="row">
+                    <a class="" href="#page-top"><img src="images/getlinks.jpeg" class="img-circle getlinks-ico" /></a>
+
+                </div>
+                <div class="row">
+                    <ul class="nav navbar-nav">
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="#page-top">Top</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="#section1">Lorem1</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="#section2">Lorem2</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="#section3">Lorem3</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <section id="section1">
+        <div class="container">
+
+
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center title">
+                    <h2>  Lorem ipsum dolor 1</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <p>
+                        Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit
+
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="section2">
+      
+    </section>
+    <footer id="section3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-xs-12 text-center">
+                    <h6>Lorem ipsum</h6>
+                    <p>
+                        Lorem ipsum dolor sit Lorem ipsum dolor sit
+                    </p>
+                </div>
+                <div class="col-md-3 col-xs-12 text-center">
+                    <h6>Lorem ipsum</h6>
+                    <p>
+                        Lorem ipsum dolor sit Lorem ipsum dolor sit
+                    </p>
+                </div>
+                <div class="col-md-3 col-xs-12 text-center">
+                    <h6>Lorem ipsum</h6>
+                    <p>
+                        Lorem ipsum dolor sit Lorem ipsum dolor sit
+                    </p>
+                </div>
+                <div class="col-md-3 col-xs-12 text-center">
+                    <h5>Lorem ipsum</h5>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#"> <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"> <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.min.js"></script>
+
+    <!-- endbower -->
+    <!-- endbuild -->
+    <script src="scripts/app.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        $(document).ready(function() {
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top - 100
+                    }, 800, function() {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+</body>
+
+</html>
